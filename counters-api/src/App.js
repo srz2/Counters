@@ -37,6 +37,10 @@ app.get('/stats', async (req, res) => {
     })
 })
 
+app.get('/mock/recipes', async(req, res) => {
+    res.json({recipeid: "1", title: "Cheese Burger", image: "assets/images/cheeseburger.jpeg", author: "Stevey", time: "15"})
+})
+
 app.get('/recipes', async (req, res) => {
     const recipies = await pool.query("SELECT * FROM recipes");
     res.json(recipies.rows);

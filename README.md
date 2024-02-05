@@ -12,3 +12,28 @@ This was extended upon my github repo [netninja-tailwind](https://github.com/srz
 ## Counters Api
 
 This is the API for the Counter application which was a front end project. This api moved the content of the app to its own database and api service to allow extensability
+
+## Resources for Deployment
+
+- Web Interface - [Netlify](netlify.com)
+- Api Application - [Render](render.com)
+- Sql Database - [CockroachLabs](cockroachlabs.cloud)
+
+## Build Instructions
+
+1. Clone the repository
+
+        git clone https://github.com/srz2/Counters.git
+
+2. Start the api
+
+        cd counters-api
+        npm install
+        npm start dev
+
+3. Start the web client
+
+        cd counters-web
+        npm install
+        echo VITE_BASE_URL=localhost:3000/mock > .env
+        npm start dev
