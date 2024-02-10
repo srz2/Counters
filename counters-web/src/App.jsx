@@ -34,6 +34,7 @@ function App() {
 
                 <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-10">
                     {/* cards go here */}
+                    {recipes.length == 0 && <p>Loading<br/><span className='text-sm'>This can take a minute for the first time...</span></p> }
                     {recipes.map(recipe => {
                       return <Card key={recipe.recipeid} image={recipe.image} title={recipe.title} author={recipe.author} time={recipe.time}/>
                     })}
