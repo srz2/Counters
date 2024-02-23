@@ -4,6 +4,7 @@ import Card from './components/Card/Card'
 import Header from './components/Header/Header'
 import { useState } from 'react'
 import { useEffect } from 'react'
+import Survey from './components/Survey/Survey'
 
 function App() {
 
@@ -48,6 +49,9 @@ function App() {
                 <div className="flex justify-center">
                     <div className="transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 bg-secondary-100 text-secondary-200 btn hover:shadow-inner">Load More</div>
                 </div>
+
+                <h4>Request a Recipe</h4>
+                <Survey></Survey>
             </div>
           </main>
         </div>
