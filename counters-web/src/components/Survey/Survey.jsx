@@ -1,7 +1,7 @@
 function Survey() {
     return (
         <div>
-            <form name="Recipe Requests" netlify>
+            <form name="Recipe-Requests" method="POST" netlify>
                 <div className="flex flex-col w-1/2">
                     <label htmlFor="desire">Level Of Desire</label>
                     <select name="desire" id="des">
